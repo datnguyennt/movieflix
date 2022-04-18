@@ -1,0 +1,14 @@
+{
+  'version': 0,
+  'use-external-names': 'false',
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': "/Volumes/Media/project/movie_flix/build/macos/Build/Products/Debug/flutter_web_auth/flutter_web_auth.framework/Modules"
+    'contents': [{
+      'type': 'file',
+      'name': "module.modulemap",
+      'external-contents': "/Volumes/Media/project/movie_flix/build/macos/Build/Intermediates.noindex/Pods.build/Debug/flutter_web_auth.build/unextended-module.modulemap",
+    }]
+  }]
+}

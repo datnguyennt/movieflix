@@ -1,0 +1,340 @@
+{
+  "kind": "Root",
+  "name": "TopLevel",
+  "printedName": "TopLevel",
+  "children": [
+    {
+      "kind": "Import",
+      "name": "AuthenticationServices",
+      "printedName": "AuthenticationServices",
+      "declKind": "Import",
+      "moduleName": "flutter_web_auth"
+    },
+    {
+      "kind": "Import",
+      "name": "FlutterMacOS",
+      "printedName": "FlutterMacOS",
+      "declKind": "Import",
+      "moduleName": "flutter_web_auth"
+    },
+    {
+      "kind": "Import",
+      "name": "SafariServices",
+      "printedName": "SafariServices",
+      "declKind": "Import",
+      "moduleName": "flutter_web_auth"
+    },
+    {
+      "kind": "Import",
+      "name": "SwiftOnoneSupport",
+      "printedName": "SwiftOnoneSupport",
+      "declKind": "Import",
+      "moduleName": "flutter_web_auth"
+    },
+    {
+      "kind": "Import",
+      "name": "_Concurrency",
+      "printedName": "_Concurrency",
+      "declKind": "Import",
+      "moduleName": "flutter_web_auth"
+    },
+    {
+      "kind": "Import",
+      "name": "flutter_web_auth",
+      "printedName": "flutter_web_auth",
+      "declKind": "Import",
+      "moduleName": "flutter_web_auth",
+      "declAttributes": [
+        "Exported"
+      ]
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "FlutterWebAuthPlugin",
+      "printedName": "FlutterWebAuthPlugin",
+      "children": [
+        {
+          "kind": "Function",
+          "name": "register",
+          "printedName": "register(with:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "FlutterPluginRegistrar",
+              "printedName": "FlutterMacOS.FlutterPluginRegistrar",
+              "usr": "c:objc(pl)FlutterPluginRegistrar"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "c:@M@flutter_web_auth@objc(cs)FlutterWebAuthPlugin(cm)registerWithRegistrar:",
+          "mangledName": "$s16flutter_web_auth20FlutterWebAuthPluginC8register4withySo0dG9Registrar_p_tFZ",
+          "moduleName": "flutter_web_auth",
+          "static": true,
+          "objc_name": "registerWithRegistrar:",
+          "declAttributes": [
+            "Final",
+            "ObjC"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Function",
+          "name": "handle",
+          "printedName": "handle(_:result:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "Void",
+              "printedName": "()"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "FlutterMethodCall",
+              "printedName": "FlutterMacOS.FlutterMethodCall",
+              "usr": "c:objc(cs)FlutterMethodCall"
+            },
+            {
+              "kind": "TypeFunc",
+              "name": "Function",
+              "printedName": "(Any?) -> ()",
+              "children": [
+                {
+                  "kind": "TypeNominal",
+                  "name": "Void",
+                  "printedName": "()"
+                },
+                {
+                  "kind": "TypeNominal",
+                  "name": "Optional",
+                  "printedName": "Any?",
+                  "children": [
+                    {
+                      "kind": "TypeNominal",
+                      "name": "ProtocolComposition",
+                      "printedName": "Any"
+                    }
+                  ],
+                  "usr": "s:Sq"
+                }
+              ]
+            }
+          ],
+          "declKind": "Func",
+          "usr": "c:@M@flutter_web_auth@objc(cs)FlutterWebAuthPlugin(im)handleMethodCall:result:",
+          "mangledName": "$s16flutter_web_auth20FlutterWebAuthPluginC6handle_6resultySo0D10MethodCallC_yypSgctF",
+          "moduleName": "flutter_web_auth",
+          "isOpen": true,
+          "objc_name": "handleMethodCall:result:",
+          "declAttributes": [
+            "ObjC"
+          ],
+          "funcSelfKind": "NonMutating"
+        },
+        {
+          "kind": "Constructor",
+          "name": "init",
+          "printedName": "init()",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "FlutterWebAuthPlugin",
+              "printedName": "flutter_web_auth.FlutterWebAuthPlugin",
+              "usr": "c:@M@flutter_web_auth@objc(cs)FlutterWebAuthPlugin"
+            }
+          ],
+          "declKind": "Constructor",
+          "usr": "c:@M@flutter_web_auth@objc(cs)FlutterWebAuthPlugin(im)init",
+          "mangledName": "$s16flutter_web_auth20FlutterWebAuthPluginCACycfc",
+          "moduleName": "flutter_web_auth",
+          "overriding": true,
+          "implicit": true,
+          "objc_name": "init",
+          "declAttributes": [
+            "Dynamic",
+            "ObjC",
+            "Override"
+          ],
+          "init_kind": "Designated"
+        }
+      ],
+      "declKind": "Class",
+      "usr": "c:@M@flutter_web_auth@objc(cs)FlutterWebAuthPlugin",
+      "mangledName": "$s16flutter_web_auth20FlutterWebAuthPluginC",
+      "moduleName": "flutter_web_auth",
+      "isOpen": true,
+      "intro_Macosx": "10.15",
+      "declAttributes": [
+        "Available",
+        "ObjC"
+      ],
+      "superclassUsr": "c:objc(cs)NSObject",
+      "inheritsConvenienceInitializers": true,
+      "superclassNames": [
+        "ObjectiveC.NSObject"
+      ],
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "Equatable",
+          "printedName": "Equatable",
+          "usr": "s:SQ",
+          "mangledName": "$sSQ"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Hashable",
+          "printedName": "Hashable",
+          "usr": "s:SH",
+          "mangledName": "$sSH"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CVarArg",
+          "printedName": "CVarArg",
+          "usr": "s:s7CVarArgP",
+          "mangledName": "$ss7CVarArgP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "_KeyValueCodingAndObservingPublishing",
+          "printedName": "_KeyValueCodingAndObservingPublishing",
+          "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+          "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "_KeyValueCodingAndObserving",
+          "printedName": "_KeyValueCodingAndObserving",
+          "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+          "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CustomStringConvertible",
+          "printedName": "CustomStringConvertible",
+          "usr": "s:s23CustomStringConvertibleP",
+          "mangledName": "$ss23CustomStringConvertibleP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CustomDebugStringConvertible",
+          "printedName": "CustomDebugStringConvertible",
+          "usr": "s:s28CustomDebugStringConvertibleP",
+          "mangledName": "$ss28CustomDebugStringConvertibleP"
+        }
+      ]
+    },
+    {
+      "kind": "TypeDecl",
+      "name": "FlutterViewController",
+      "printedName": "FlutterViewController",
+      "children": [
+        {
+          "kind": "Function",
+          "name": "presentationAnchor",
+          "printedName": "presentationAnchor(for:)",
+          "children": [
+            {
+              "kind": "TypeNominal",
+              "name": "NSWindow",
+              "printedName": "AppKit.NSWindow",
+              "usr": "c:objc(cs)NSWindow"
+            },
+            {
+              "kind": "TypeNominal",
+              "name": "ASWebAuthenticationSession",
+              "printedName": "AuthenticationServices.ASWebAuthenticationSession",
+              "usr": "c:objc(cs)ASWebAuthenticationSession"
+            }
+          ],
+          "declKind": "Func",
+          "usr": "c:@CM@flutter_web_auth@@objc(cs)FlutterViewController(im)presentationAnchorForWebAuthenticationSession:",
+          "mangledName": "$sSo21FlutterViewControllerC16flutter_web_authE18presentationAnchor3forSo8NSWindowCSo26ASWebAuthenticationSessionC_tF",
+          "moduleName": "flutter_web_auth",
+          "isOpen": true,
+          "objc_name": "presentationAnchorForWebAuthenticationSession:",
+          "declAttributes": [
+            "Dynamic",
+            "ObjC",
+            "Custom"
+          ],
+          "funcSelfKind": "NonMutating"
+        }
+      ],
+      "declKind": "Class",
+      "usr": "c:objc(cs)FlutterViewController",
+      "moduleName": "FlutterMacOS",
+      "isOpen": true,
+      "objc_name": "FlutterViewController",
+      "declAttributes": [
+        "ObjC",
+        "Dynamic"
+      ],
+      "superclassUsr": "c:objc(cs)NSViewController",
+      "isExternal": true,
+      "inheritsConvenienceInitializers": true,
+      "superclassNames": [
+        "AppKit.NSViewController",
+        "AppKit.NSResponder",
+        "ObjectiveC.NSObject"
+      ],
+      "conformances": [
+        {
+          "kind": "Conformance",
+          "name": "Equatable",
+          "printedName": "Equatable",
+          "usr": "s:SQ",
+          "mangledName": "$sSQ"
+        },
+        {
+          "kind": "Conformance",
+          "name": "Hashable",
+          "printedName": "Hashable",
+          "usr": "s:SH",
+          "mangledName": "$sSH"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CVarArg",
+          "printedName": "CVarArg",
+          "usr": "s:s7CVarArgP",
+          "mangledName": "$ss7CVarArgP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "_KeyValueCodingAndObservingPublishing",
+          "printedName": "_KeyValueCodingAndObservingPublishing",
+          "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+          "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "_KeyValueCodingAndObserving",
+          "printedName": "_KeyValueCodingAndObserving",
+          "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+          "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CustomStringConvertible",
+          "printedName": "CustomStringConvertible",
+          "usr": "s:s23CustomStringConvertibleP",
+          "mangledName": "$ss23CustomStringConvertibleP"
+        },
+        {
+          "kind": "Conformance",
+          "name": "CustomDebugStringConvertible",
+          "printedName": "CustomDebugStringConvertible",
+          "usr": "s:s28CustomDebugStringConvertibleP",
+          "mangledName": "$ss28CustomDebugStringConvertibleP"
+        }
+      ]
+    }
+  ],
+  "json_format_version": 6
+}

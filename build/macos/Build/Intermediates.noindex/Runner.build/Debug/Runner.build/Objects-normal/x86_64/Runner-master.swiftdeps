@@ -1,0 +1,8 @@
+version: "Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)"
+options: "c4dfddf03511dd2ad3594563f40db9ba58ab950ec70a68e67e005e4bf7b0b81f"
+build_start_time: [1650255378, 559437990]
+build_end_time: [1650255379, 788179874]
+inputs:
+  "/Volumes/Media/project/movie_flix/macos/Flutter/GeneratedPluginRegistrant.swift": [1650255359, 0]
+  "/Volumes/Media/project/movie_flix/macos/Runner/AppDelegate.swift": [1631114968, 0]
+  "/Volumes/Media/project/movie_flix/macos/Runner/MainFlutterWindow.swift": [1631114968, 0]
