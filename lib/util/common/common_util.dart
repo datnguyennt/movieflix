@@ -7,6 +7,7 @@ import 'package:get_storage/get_storage.dart';
 import 'package:http/http.dart' as http;
 import 'package:openid_client/openid_client.dart';
 import 'package:openid_client/openid_client_io.dart';
+import '../../data/url_api.dart';
 import '../../models/account/account_user.dart';
 import '/util/constants/constants.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -39,27 +40,37 @@ class CommonUtil {
   //   Global.refreshToken = accessCredentials.refreshToken.toString();
   //   Global.accessToken = accessCredentials.accessToken.data.toString();
   // }
-  static Future<void> loginGoogle() async {
-//     // final clientId =
-//     //     ClientId(LocaleKeys.clientIdMacOs, LocaleKeys.clientSecret);
-// // discover the metadata of the google OP
-//     var issuer = await Issuer.discover(Issuer.google);
-//     var client = Client(issuer, LocaleKeys.clientIdMacOs, clientSecret: LocaleKeys.clientSecret);
-//
-//     // create an authenticator
-//     var authenticator = Authenticator(client,
-//         scopes: LocaleKeys.scopes,
-//         port: 4000, urlLancher: urlLauncher);
-//
-//     // starts the authentication
-//     var c = await authenticator.authorize();
+  static Future<bool> loginGoogle() async {
+    var issuer = await Issuer.discover(Issuer.google);
+    var client = Client(issuer, LocaleKeys.clientIdMacOs,
+        clientSecret: LocaleKeys.clientSecret);
+
+    // create an authenticator
+    var authenticator = Authenticator(client,
+        scopes: LocaleKeys.scopes, port: 4000, urlLancher: prompt);
+
+    // starts the authentication
+    var c = await authenticator.authorize();
+    AccountUser accountUser = AccountUser.fromJson(c.response!);
+    log(accountUser.accessToken ?? "");
+    log(accountUser.expiresIn.toString());
+    log(accountUser.refreshToken ?? "");
+    log(accountUser.tokenType ?? "");
+    if (!CommonUtil.isEmpty(accountUser.accessToken) &&
+        !CommonUtil.isEmpty(accountUser.refreshToken)) {
+
+
+      Global.refreshToken = accountUser.refreshToken.toString();
+      Global.accessToken = accountUser.accessToken.toString();
+      return true;
+    } else {
+      return false;
+    }
 
     // log("token " + author.toJson().toString());
     // log("access token " + accessCredentials.accessToken.data);
     // log("expire token " + accessCredentials.accessToken.expiry.toString());
     // log("refresh token " + accessCredentials.refreshToken.toString());
-    // Global.refreshToken = accessCredentials.refreshToken.toString();
-    // Global.accessToken = accessCredentials.accessToken.data.toString();
   }
 
   static Future<void> saveUserLogin({required AccountUser accountUser}) async {

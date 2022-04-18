@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:movie_flix/home_controller.dart';
-void main()async {
+import 'package:movie_flix/modules/splash/binding/splash_binding.dart';
+import 'package:movie_flix/routes/app_pages.dart';
+
+void main() async {
   // WidgetsFlutterBinding.ensureInitialized();
   // await Firebase.initializeApp();
   runApp(const MyApp());
@@ -13,12 +17,20 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
+    return ScreenUtilInit(
+      minTextAdapt: true,
+      splitScreenMode: true,
+      designSize: const Size(375, 667),
+      builder: (_) => GetMaterialApp(
+        debugShowCheckedModeBanner: false,
+        getPages: AppPages.routes,
+        //initialBinding: SplashBinding(),
+        initialRoute: AppPages.INITIAL,
+        title: 'Flutter Demo',
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+        ),
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
 }
@@ -26,13 +38,15 @@ class MyApp extends StatelessWidget {
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key, required this.title}) : super(key: key);
   final String title;
+
   @override
   State<MyHomePage> createState() => _MyHomePageState();
 }
 
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
-final HomeController controller = Get.put(HomeController());
+  final HomeController controller = Get.put(HomeController());
+
   void _incrementCounter() {
     setState(() {
       _counter++;
@@ -52,7 +66,7 @@ final HomeController controller = Get.put(HomeController());
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             GestureDetector(
-              onTap: (){
+              onTap: () {
                 controller.loginGoogle();
               },
               child: Text('login'),

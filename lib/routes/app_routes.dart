@@ -1,7 +1,7 @@
 part of 'app_pages.dart';
 
 abstract class Routes {
-  static const SPLASH = '/splashOld';
+  static const SPLASH = '/splash';
   static const SHAREIMAGE = '/shareimage';
   static const CITY_SEARCH = '/citySearch';
   static const CROPIMAGE = '/cropImage';
@@ -40,6 +40,7 @@ abstract class Routes {
 
 abstract class _Paths {
   static const HOME = '/home';
+  static const SPLASH = '/splash';
   static const HOMEWEATHER = '/homeWeather';
   static const PRODUCTS = '/products';
   static const PROFILE = '/profile';

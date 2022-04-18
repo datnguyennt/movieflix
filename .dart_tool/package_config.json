@@ -80,6 +80,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "dio",
+      "rootUri": "file:///usr/local/Caskroom/flutter/2.10.4/flutter/.pub-cache/hosted/pub.dartlang.org/dio-4.0.6",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "fake_async",
       "rootUri": "file:///usr/local/Caskroom/flutter/2.10.4/flutter/.pub-cache/hosted/pub.dartlang.org/fake_async-1.2.0",
       "packageUri": "lib/",
@@ -464,7 +470,7 @@
       "languageVersion": "2.16"
     }
   ],
-  "generated": "2022-04-18T04:28:28.661109Z",
+  "generated": "2022-04-18T06:59:29.307473Z",
   "generator": "pub",
   "generatorVersion": "2.16.2"
 }

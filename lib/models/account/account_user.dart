@@ -9,6 +9,8 @@ class AccountUser {
   String? picture;
   String? email;
   String? tokenType;
+  String? error;
+  String? errorDescription;
 
   AccountUser({
     this.accessToken,
@@ -21,6 +23,8 @@ class AccountUser {
     this.expiresIn,
     this.refreshToken,
     this.tokenType,
+    this.error,
+    this.errorDescription
   });
 
   AccountUser.fromJson(Map<dynamic, dynamic> json) {
@@ -34,6 +38,8 @@ class AccountUser {
     familyName = json['family_name'] ?? null;
     picture = json['picture'] ?? null;
     email = json['email'] ?? null;
+    error = json['error'] ?? null;
+    errorDescription = json['error_description'] ?? null;
   }
 
   Map<String, dynamic> toJson() {
@@ -48,6 +54,8 @@ class AccountUser {
     data['picture'] = this.picture;
     data['email'] = this.email;
     data['name'] = this.name;
+    data['error'] = this.error;
+    data['error_description'] = this.errorDescription;
     return data;
   }
 }
